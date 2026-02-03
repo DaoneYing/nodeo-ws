@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🌸 樱色幻想 </title>
+    <title>🌸 樱色幻想 - 动漫主题站</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;700&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
     <style>
@@ -303,11 +303,14 @@
     <footer class="anime-footer">
         <div class="footer-bg"></div>
         <div class="footer-content">
-            <h2 style="color: white; margin-bottom: 1rem;">欢迎光临！</h2>
-            <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem;">这是一个安静的网站！</p>
+            <h2 style="color: white; margin-bottom: 1rem;">加入我们的二次元大家庭</h2>
+            <p style="color: rgba(255,255,255,0.9); margin-bottom: 2rem;">订阅获取最新动漫资讯和独家福利</p>
             
             <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;">
-                © 2026 一切内容仅供娱乐交流使用
+                © 2023 樱色幻想动漫社区 | 一切内容仅供娱乐交流使用
+            </p>
+            <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-top: 1rem;">
+                页面已针对静态部署进行优化
             </p>
         </div>
     </footer>
@@ -352,7 +355,7 @@
             
             // 随机选择樱花类型
             const sakuraTypes = ['🌸', '💮', '🌺', '🌷'];
-            const randomType = sakuraTypes[Math.floor(MathRandom() * sakuraTypes.length)];
+            const randomType = sakuraTypes[Math.floor(Math.random() * sakuraTypes.length)];
             sakura.innerHTML = randomType;
             
             // 随机大小
@@ -371,7 +374,7 @@
             
             // 随机旋转角度
             const rotation = Math.random() * 360;
-            sakura.style.transform = `rotate(${rotation}deg)`;
+            sakura.style.transform = `rotate(${rotation)deg)`;
             
             document.getElementById('sakura-container').appendChild(sakura);
             
@@ -392,7 +395,7 @@
         // 唯美提示数组
         const beautifulMessages = [
             {
-                icon: "fas fa-cherry-blossom",
+                icon: "fas fa-ccherry-blossom",
                 title: "🌸 樱色幻想",
                 content: "樱花飘落的速度是每秒五厘米，而我思念你的心，却比光速还要快。在这片樱色的世界里，让我们一起编织最美的回忆。"
             },
@@ -427,7 +430,7 @@
                 content: "画笔在纸上舞动，色彩在想象中绽放。在这创意的世界里，让我们描绘出心中最美的风景。"
             },
             {
-                icon: 'fas fa-mug-hot',
+                icon: "fas fa-mug-hot",
                 title: "🍵 茶之禅意",
                 content: "一杯清茶，一缕幽香，一份宁静。在这喧嚣的世界里，让我们寻找内心的平静与安宁。"
             },
@@ -479,6 +482,11 @@
         // 按钮点击事件
         document.getElementById('magic-btn').addEventListener('click', function() {
             showBeautifulMessage();
+        });
+        
+        // 页面加载完成后的优化提示
+        window.addEventListener('load', function() {
+            console.log('樱色幻想动漫主题站已完全加载，适合静态部署');
         });
     </script>
 </body>

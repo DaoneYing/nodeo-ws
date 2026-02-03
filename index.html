@@ -257,6 +257,10 @@
                 font-size: 2.5rem;
             }
             
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
             .message-container {
                 padding: 1.5rem;
             }
@@ -310,7 +314,7 @@
                 © 2023 樱色幻想动漫社区 | 一切内容仅供娱乐交流使用
             </p>
             <p style="color: rgba(255,255,255,0.5); font-size: 0.8rem; margin-top: 1rem;">
-                页面已针对静态部署进行优化
+                已部署至 GitHub Pages
             </p>
         </div>
     </footer>
@@ -374,7 +378,7 @@
             
             // 随机旋转角度
             const rotation = Math.random() * 360;
-            sakura.style.transform = `rotate(${rotation)deg)`;
+            sakura.style.transform = `rotate(${rotation}deg)`;
             
             document.getElementById('sakura-container').appendChild(sakura);
             
@@ -395,7 +399,7 @@
         // 唯美提示数组
         const beautifulMessages = [
             {
-                icon: "fas fa-ccherry-blossom",
+                icon: "fas fa-cherry-blossom",
                 title: "🌸 樱色幻想",
                 content: "樱花飘落的速度是每秒五厘米，而我思念你的心，却比光速还要快。在这片樱色的世界里，让我们一起编织最美的回忆。"
             },
@@ -486,7 +490,7 @@
         
         // 页面加载完成后的优化提示
         window.addEventListener('load', function() {
-            console.log('樱色幻想动漫主题站已完全加载，适合静态部署');
+            console.log('樱色幻想动漫主题站已完全加载，部署至GitHub Pages成功！');
         });
     </script>
 </body>
